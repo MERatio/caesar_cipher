@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-require './caesar_cipher.rb'
+require_relative '../lib/caesar_cipher.rb'
+
 describe '#caesar_cipher' do
   it 'wraps from z to a' do
     expect(caesar_cipher('Xylophone', 30)).to eql('Bcpstlsri')
